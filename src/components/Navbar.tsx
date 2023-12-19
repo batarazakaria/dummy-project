@@ -5,17 +5,17 @@ import {
   signOut,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
-import { auth } from "../../../firebase";
+import { auth } from "@/../firebase";
 import Link from "next/link";
 import Share from "./Share";
 import Switcher, { Tab, theme } from './Switcher';
 import { darkTheme } from './plugins/sync';
-import { LogoHorizontal } from "./Icons";
+import { LogoHorizontal } from "./icons";
 
 const Navbar = () => {
   const [user, setUser] = useState<any | null>(false);
   const [nav, setNav] = useState(false);
-
+LogoHorizontal
   const [colorScheme, setColorScheme] = useState(darkTheme)
   const toggle = () => theme(colorScheme, setColorScheme)
 
